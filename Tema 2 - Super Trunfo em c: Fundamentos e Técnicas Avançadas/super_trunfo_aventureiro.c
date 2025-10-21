@@ -1,17 +1,28 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+ * Programa: Super Trunfo - Cidades
+ * Descrição: Cadastro e exibição de cartas de cidades com atributos demográficos e econômicos
+ * Autor: [Seu Nome]
+ * Data: [Data Atual]
+ */
+
 int main()
 {
+    // Declaração de variáveis da Carta 1
     char estado1, codigo_da_carta1[3], cidade1[20];
     int populacao1, pontos_turisticos1;
     float pib1, area1, densidade_populacional1, pib_per_capita1;
     
+    // Declaração de variáveis da Carta 2
     char estado2, codigo_da_carta2[3], cidade2[20];
     int populacao2, pontos_turisticos2;
     float pib2, area2, densidade_populacional2, pib_per_capita2;
     
+    // ========== ENTRADA DE DADOS - CARTA 1 ==========
     printf("Carta 1: \n");
+    
     printf("Digite o estado: \n");
     scanf("%c", &estado1);
     
@@ -19,9 +30,9 @@ int main()
     scanf("%s", codigo_da_carta1);
     
     printf("Digite o nome da cidade: \n");
-    getchar();
+    getchar();  // Limpa buffer do teclado
     fgets(cidade1, sizeof(cidade1), stdin);
-    cidade1[strcspn(cidade1, "\n")] = '\0';
+    cidade1[strcspn(cidade1, "\n")] = '\0';  // Remove '\n'
     
     printf("Digite a população: \n");
     scanf("%d", &populacao1);
@@ -35,21 +46,24 @@ int main()
     printf("Digite a quantidade de pontos turisticos: \n");
     scanf("%d", &pontos_turisticos1);
 
-    densidade_populacional1 = populacao1 / area1;
-    pib_per_capita1 = pib1 / populacao1;
+    // Cálculos dos atributos derivados da Carta 1
+    densidade_populacional1 = populacao1 / area1;  // Habitantes por km²
+    pib_per_capita1 = pib1 / populacao1;  // PIB dividido pela população
     
+    // ========== ENTRADA DE DADOS - CARTA 2 ==========
     printf("\nCarta 2: \n");
+    
     printf("Digite o estado: \n");
-    getchar();
+    getchar();  // Limpa buffer do teclado
     scanf("%c", &estado2);
     
     printf("Digite o codigo: \n");
     scanf("%s", codigo_da_carta2);
     
     printf("Digite o nome da cidade: \n");
-    getchar();
+    getchar();  // Limpa buffer do teclado
     fgets(cidade2, sizeof(cidade2), stdin);
-    cidade2[strcspn(cidade2, "\n")] = '\0';
+    cidade2[strcspn(cidade2, "\n")] = '\0';  // Remove '\n'
     
     printf("Digite a população: \n");
     scanf("%d", &populacao2);
@@ -63,9 +77,11 @@ int main()
     printf("Digite a quantidade de pontos turisticos: \n");
     scanf("%d", &pontos_turisticos2);
 
-    densidade_populacional2 = populacao2 / area2;
-    pib_per_capita2 = pib2 / populacao2;
+    // Cálculos dos atributos derivados da Carta 2
+    densidade_populacional2 = populacao2 / area2;  // Habitantes por km²
+    pib_per_capita2 = pib2 / populacao2;  // PIB dividido pela população
     
+    // ========== EXIBIÇÃO DAS CARTAS ==========
     printf("\n========================================\n");
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
