@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- * Programa: Super Trunfo - Cidades
- * Descrição: Jogo de cartas comparando atributos de cidades
- */
-
 int main()
 {  
     // Variáveis de controle
