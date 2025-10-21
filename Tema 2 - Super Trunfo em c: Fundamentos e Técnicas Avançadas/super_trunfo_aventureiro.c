@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- * Programa: Super Trunfo - Cidades
- * Descrição: Cadastro e exibição de cartas de cidades com atributos demográficos e econômicos
- * Autor: [Seu Nome]
- * Data: [Data Atual]
- */
-
 int main()
 {
     // Declaração de variáveis da Carta 1
