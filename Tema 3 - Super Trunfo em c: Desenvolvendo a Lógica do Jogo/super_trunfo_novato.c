@@ -14,9 +14,9 @@ int main()
     float pib2, area2, densidade_populacional2, pib_per_capita2, super_poder2;
     
     // ========== ENTRADA - CARTA 1 ==========
-    printf("=========================================\n");
-    printf("    BEM-VINDO AO SUPER TRUNFO CIDADES    \n");
-    printf("=========================================\n\n");
+    printf("========================================\n");
+    printf("          SUPER TRUNFO CIDADES          \n");
+    printf("========================================\n\n");
     
     printf(">>> CARTA 1 <<<\n");
     printf("----------------------------\n");
@@ -81,11 +81,6 @@ int main()
     densidade_populacional2 = populacao2 / area2;
     pib_per_capita2 = pib2 / populacao2;
     super_poder2 = populacao2 + pontos_turisticos2 + pib2 + area2 + pib_per_capita2 - densidade_populacional2;
-
-    // ========== EXIBIÇÃO E COMPARAÇÃO ==========
-    printf("\n========================================\n");
-    printf("          COMPARAÇÃO DE CARTAS           \n");
-    printf("========================================\n");
     
     printf("\nAtributo comparado: DENSIDADE POPULACIONAL\n");
     printf("------------------------------------------\n");
@@ -96,10 +91,6 @@ int main()
     printf("\nResultado: Carta %d (%s) venceu!\n", 
            densidade_populacional1 < densidade_populacional2 ? 1 : 2, 
            densidade_populacional1 < densidade_populacional2 ? cidade1 : cidade2);
-    
-    printf("\n========================================\n");
-    printf("           OBRIGADO POR JOGAR           \n");
-    printf("========================================\n");
     
     return 0;
 }
