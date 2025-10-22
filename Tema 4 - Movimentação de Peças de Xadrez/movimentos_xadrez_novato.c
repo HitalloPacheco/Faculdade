@@ -2,32 +2,30 @@
 
 int main()
 {
- int i = 0;
+    int i = 0; // Contador inicializado
 
- printf("Movimentos da Torre:\n\n");
+    // Torre: movimento horizontal
+    printf("Movimentos da Torre:\n\n");
+    do {
+        printf("Direita\n");
+        i++;
+    } while (i < 5); // Repete 5 vezes
 
-  do {
-      printf("Direita\n");
-      i++;
-  } while (i < 5);
+    // Bispo: movimento diagonal
+    printf("\nMovimentos do Bispo:\n\n");
+    i = 0; // Reinicia contador
+    do {
+        printf("Cima, Direita\n");
+        i++;
+    } while (i < 5); // Repete 5 vezes
 
-  printf("\nMovimentos do Bispo:\n\n");
+    // Rainha: movimento para esquerda
+    printf("\nMovimentos da Rainha:\n\n");
+    i = 0; // Reinicia contador
+    do {
+        printf("Esquerda\n");
+        i++;
+    } while (i < 8); // Repete 8 vezes
 
-  i = 0;
-
-  do {
-      printf("Cima, Direita\n");
-      i++;
-  } while (i < 5);
-
-  printf("\nMovimentos da Rainha:\n\n");
-
-  i = 0;
-
-  do {
-      printf("Esquerda\n");
-      i++;
-  } while (i < 8);
-
-  return 0;
+    return 0;
 }
